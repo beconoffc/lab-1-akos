@@ -41,11 +41,11 @@ check_case() {
     if [ "$new_size" -le "$expected_size" ]; then
         echo "Тест $case_dir: OK"
         echo "Старый размер: $(numfmt --to=iec $old_size), новый размер: $(numfmt --to=iec $new_size), порог: $thsh%"
-	echo ""
+		echo ""
     else
         echo "Тест $case_dir: FAIL"
         echo "Старый размер: $(numfmt --to=iec $old_size), новый размер: $(numfmt --to=iec $new_size), порог: $thsh%"
-	echo ""
+		echo ""
     fi
 }
 

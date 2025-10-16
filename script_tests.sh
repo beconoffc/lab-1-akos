@@ -6,7 +6,7 @@ LOG_DIR_NAME="log"
 DISK_IMAGE="./new_virtual_disk.img"
 
 dd if=/dev/zero of="$DISK_IMAGE" bs=1G count=1 status=none
-mkfs -t ext4 "$DISK_IMAGE" > /dev/null
+mkfs -t ext4 "$DISK_IMAGE" > /dev/null 2>&1
 
 mkdir -p "$TESTS_DIR"
 

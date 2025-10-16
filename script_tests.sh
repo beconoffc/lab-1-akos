@@ -50,7 +50,7 @@ check_case() {
 }
 
 for i in 1 2 3 4; do
-    case_dir="$TESTS_DIR/test_$i"
+    case_dir="$TESTS_DIR_$i"
     rm -rf "$case_dir"
     mkdir -p "$case_dir"
     thsh=$((50 + i*10))
